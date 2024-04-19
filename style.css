@@ -1,0 +1,76 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');*/
+
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, black, #282c40);
+    width: 100vw;
+    height: 100vh;
+    box-shadow: inset 1px 1px 2pc 2px black;
+    overflow: hidden;
+}
+
+.rod{
+    position: absolute;
+    left: 20%;
+    height: 15px;
+    width: 200px;
+    border-radius: 20px;
+    border: solid 1px white;
+}
+
+
+#rod1{
+    top: 15px;
+    background: repeating-linear-gradient(
+            45deg,
+            orange,
+            orange 10px,
+            black 10px,
+            black 20px
+    );
+}
+
+#rod2{
+    bottom: 15px;
+    background: repeating-linear-gradient(
+            135deg,
+            orange,
+            orange 10px,
+            black 10px,
+            black 20px
+    );
+}
+
+#ball{
+    position: absolute;
+    bottom: 32px;
+    height: 25px;
+    width: 25px;
+    background-color: orangered;
+    border-radius: 100%;
+    box-shadow: inset 1px 2px 5px black;
+    left: calc(20% + 90px);
+}
+
+#ball2{
+    position: absolute;
+    bottom: 32px;
+    height: 25px;
+    width: 25px;
+    background-color: blanchedalmond;
+    border-radius: 100%;
+    box-shadow: inset 1px 2px 5px black;
+    left: calc(20% + 90px);
+}
+
+#score{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+   transform: translate(-50%, -50%);
+    font-family: 'Rubik Gemstones', cursive;
+    font-size: 300px;
+    opacity: 10%;
+    /*user-select: none;*/
+}
+
